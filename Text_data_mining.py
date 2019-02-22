@@ -63,13 +63,13 @@ def Get_File_address(dir):
     return File_address
 if __name__ == '__main__':
     # 提取停词
-    st = codecs.open('/Users/fuxinjiang/desktop/文本数据挖掘/StopWordTable.txt', 'rb', 'gbk')
+    st = codecs.open('/Users/fuxinjiang/desktop/windows系统的代码/文本数据挖掘/StopWordTable.txt', 'rb', 'gbk')
     stopwords = []
     for line in st:
         line = line.strip()
         stopwords.append(line)
     ##获取当前文件夹
-    Total_Initial_Data_Set = '/Users/fuxinjiang/desktop/文本数据挖掘/搜狗实验室内容分类数据集'
+    Total_Initial_Data_Set = '/Users/fuxinjiang/desktop/windows系统的代码/文本数据挖掘/搜狗实验室内容分类数据集'
     s = Get_File_address(Total_Initial_Data_Set)
     #print(s)
     #Participle(s[1],Train_Data_Set,Test_Data_Set)

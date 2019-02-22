@@ -24,7 +24,6 @@ def Get_current_path(fold_path):
 def Get_words_bag(fold_path):
     Total_Document_Words = ''
     Total_file_path=Get_current_path(fold_path)
-    Total_file_path.pop(0)
     for file_path in Total_file_path:
         print(file_path)
         sentences=read_file(fold_path+'/'+file_path)

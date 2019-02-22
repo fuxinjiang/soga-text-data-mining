@@ -19,7 +19,6 @@ def convert_matrix(fold_path):
     ToTal_train_test=np.zeros((300))
     ToTal_train_test_label=np.zeros((9))
     files_path=read_files_path(fold_path)
-    files_path.pop(0)
     line_number=0
     for path in files_path:
         print(path)

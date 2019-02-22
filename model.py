@@ -46,7 +46,6 @@ if __name__ == '__main__':
     for path in fold_path:
         print(path)
         file_path=read_files_path(path)
-        file_path.pop(0)
         category_matrix=np.zeros((300))
         for files_path in file_path:
             list_sentences=read_train_test(path+'/'+files_path)
